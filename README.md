@@ -33,14 +33,14 @@ To install the `spas` library, you can use npm:
 
 The TLS functionalities in the spas library are provided through the gotsjs.js module.
 
-# Benefits
+### Benefits
 Ensures secure communication via TLS.
 Simplifies the process of generating and managing TLS certificates.
 
-# Functions
+### Functions
 generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate and private key.
 
-# Example
+### Example
     ```bash
     const sps = require('spas');
     sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
