@@ -51,83 +51,84 @@ generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate a
 
 The JWT functionalities in the spas library are provided through the gowtjs.js module.
 
-# Benefits
+### Benefits
 Provides secure token-based authentication.
 Easy generation and validation of JWT tokens.
 
-# Functions
+### Functions
 generateToken(secretKey, expiration, username, role): Generates a JWT token.
 validateToken(token, secretKey): Validates a JWT token.
 
-# Example
-  ```bash
-  const sps = require('spas');
-  const secretKey = 'supersecretkey';
-  const expiration = 3600; // 1 hour
-  const username = 'user123';
-  const role = 'admin';
-  
-  const token = sps.generateToken(secretKey, expiration, username, role);
-  console.log('Generated Token:', token);
-  
-  const validationResult = sps.validateToken(token, secretKey);
-  console.log('Validation Result:', validationResult);
-Data Validation
+### Example
+      ```bash
+      const sps = require('spas');
+      const secretKey = 'supersecretkey';
+      const expiration = 3600; // 1 hour
+      const username = 'user123';
+      const role = 'admin';
+      
+      const token = sps.generateToken(secretKey, expiration, username, role);
+      console.log('Generated Token:', token);
+      
+      const validationResult = sps.validateToken(token, secretKey);
+      console.log('Validation Result:', validationResult);
+
+## Data Validation
 The data validation functionalities in the spas library are provided through the SagemLData.js module.
 
-Benefits
+### Benefits
 Ensures data integrity and correctness.
 Flexible and customizable validation rules.
 Functions and Classes
 SagemLData: Main class for data validation.
 SagemLiThab(validatorName, validationFunction): Adds a custom validation function.
 SagemEZ(data, rules): Validates data against the specified rules.
-Example
-javascript
-Copier le code
-const { SagemLData } = require('spas');
-const sps = new SagemLData();
 
-// Adding a custom validator for age
-sps.SagemLiThab('ageValidator', async (value) => {
-  const minAge = 18;
-  const maxAge = 100;
-  if (typeof value !== 'number') return false;
-  return value >= minAge && value <= maxAge;
-});
-
-// Sample user data
-const userData = {
-  username: 'user123',
-  password: 'securepassword',
-  email: 'user123@example.com',
-  age: 25,
-};
-
-// Validation rules for the user data
-const validationRules = {
-  username: { type: 'string', minLength: 4, maxLength: 20 },
-  password: { type: 'string', minLength: 8 },
-  email: { type: 'string', format: 'email' },
-  age: { type: 'number', custom: 'ageValidator' },
-};
-
-(async () => {
-  try {
-    const validationResult = await sps.SagemEZ(userData, validationRules);
-    if (validationResult.isValid) {
-      console.log('User data is valid!');
-    } else {
-      console.error('Validation errors:', validationResult.errors);
-    }
-  } catch (error) {
-    console.error('Async validation error:', error);
-  }
-})();
-Contributing
+### Example
+        ```bash
+        const { SagemLData } = require('spas');
+        const sps = new SagemLData();
+        
+        // Adding a custom validator for age
+        sps.SagemLiThab('ageValidator', async (value) => {
+          const minAge = 18;
+          const maxAge = 100;
+          if (typeof value !== 'number') return false;
+          return value >= minAge && value <= maxAge;
+        });
+        
+        // Sample user data
+        const userData = {
+          username: 'user123',
+          password: 'securepassword',
+          email: 'user123@example.com',
+          age: 25,
+        };
+        
+        // Validation rules for the user data
+        const validationRules = {
+          username: { type: 'string', minLength: 4, maxLength: 20 },
+          password: { type: 'string', minLength: 8 },
+          email: { type: 'string', format: 'email' },
+          age: { type: 'number', custom: 'ageValidator' },
+        };
+        
+        (async () => {
+          try {
+            const validationResult = await sps.SagemEZ(userData, validationRules);
+            if (validationResult.isValid) {
+              console.log('User data is valid!');
+            } else {
+              console.error('Validation errors:', validationResult.errors);
+            }
+          } catch (error) {
+            console.error('Async validation error:', error);
+          }
+        })();
+## Contributing
 We welcome contributions to the spas library. If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
-License
+## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-© 2024 spas. All rights reserved.
+# © 2024 spas. All rights reserved.
