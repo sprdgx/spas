@@ -25,8 +25,8 @@ The `spas` library offers a range of functionalities, including:
 
 To install the `spas` library, you can use npm:
 
-```bash
-npm install spas
+    ```bash
+    npm install spas
 
 
 ## TLS Functions
@@ -41,10 +41,10 @@ Simplifies the process of generating and managing TLS certificates.
 generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate and private key.
 
 # Example
-  ```bash
-  const sps = require('spas');
-  sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
-  console.log('Certificate and Private Key generation initiated.');
+    ```bash
+    const sps = require('spas');
+    sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
+    console.log('Certificate and Private Key generation initiated.');
 
 
 ## JWT Functions
