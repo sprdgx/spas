@@ -1,4 +1,4 @@
-# spas Library Documentation
+# SPAS Library Documentation
 
 The `spas` library is a comprehensive toolkit designed for handling TLS, JWT, and data validation in a seamless manner. Developed originally in Go and compiled to JavaScript, this library provides robust security features essential for modern web applications.
 
