@@ -26,7 +26,7 @@ The `SPRDS` library offers a range of functionalities, including:
 To install the `SPRDS` library, you can use npm:
 
     ```bash
-    npm install sprds
+    npm install sprdss
 
 
 ## TLS Functions
@@ -42,7 +42,7 @@ generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate a
 
 ### Example
     ```bash
-    const sps = require('sprds');
+    const sps = require('sprdss');
     sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
     console.log('Certificate and Private Key generation initiated.');
 
@@ -61,7 +61,7 @@ validateToken(token, secretKey): Validates a JWT token.
 
 ### Example
       ```bash
-      const sps = require('sprds');
+      const sps = require('sprdss');
       const secretKey = 'supersecretkey';
       const expiration = 3600; // 1 hour
       const username = 'user123';
@@ -86,7 +86,7 @@ SagemEZ(data, rules): Validates data against the specified rules.
 
 ### Example
         ```bash
-        const { SagemLData } = require('sprds');
+        const { SagemLData } = require('sprdss');
         const sps = new SagemLData();
         
         // Adding a custom validator for age
