@@ -23,7 +23,7 @@ The `SPRDS` library offers a range of functionalities, including:
 
 ## Installation
 
-To install the `spas` library, you can use npm:
+To install the `SPRDS` library, you can use npm:
 
     ```bash
     npm install sprds
