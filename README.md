@@ -1,6 +1,6 @@
-# SPAS Library Documentation
+# SPRDS Library Documentation
 
-The `spas` library is a comprehensive toolkit designed for handling TLS, JWT, and data validation in a seamless manner. Developed originally in Go and compiled to JavaScript, this library provides robust security features essential for modern web applications.
+The `SPRDS` library is a comprehensive toolkit designed for handling TLS, JWT, and data validation in a seamless manner. Developed originally in Go and compiled to JavaScript, this library provides robust security features essential for modern web applications.
 
 ## Table of Contents
 
@@ -15,7 +15,7 @@ The `spas` library is a comprehensive toolkit designed for handling TLS, JWT, an
 
 ## Introduction
 
-The `spas` library offers a range of functionalities, including:
+The `SPRDS` library offers a range of functionalities, including:
 
 - **TLS Certificate and Key Generation**: Create and manage TLS certificates and private keys.
 - **JWT Generation and Validation**: Securely generate and validate JSON Web Tokens.
@@ -26,7 +26,7 @@ The `spas` library offers a range of functionalities, including:
 To install the `spas` library, you can use npm:
 
     ```bash
-    npm install spas
+    npm install sprds
 
 
 ## TLS Functions
@@ -42,7 +42,7 @@ generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate a
 
 ### Example
     ```bash
-    const sps = require('spas');
+    const sps = require('sprds');
     sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
     console.log('Certificate and Private Key generation initiated.');
 
@@ -61,7 +61,7 @@ validateToken(token, secretKey): Validates a JWT token.
 
 ### Example
       ```bash
-      const sps = require('spas');
+      const sps = require('sprds');
       const secretKey = 'supersecretkey';
       const expiration = 3600; // 1 hour
       const username = 'user123';
@@ -86,7 +86,7 @@ SagemEZ(data, rules): Validates data against the specified rules.
 
 ### Example
         ```bash
-        const { SagemLData } = require('spas');
+        const { SagemLData } = require('sprds');
         const sps = new SagemLData();
         
         // Adding a custom validator for age
@@ -126,9 +126,9 @@ SagemEZ(data, rules): Validates data against the specified rules.
           }
         })();
 ## Contributing
-We welcome contributions to the spas library. If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
+We welcome contributions to the SPRDS library. If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-# © 2024 spas. All rights reserved.
+# © 2024 SPRDS. All rights reserved.
