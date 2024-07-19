@@ -41,11 +41,11 @@ Simplifies the process of generating and managing TLS certificates.
 generitiWaAhfedCert(certPath, keyPath, outputDir): Generates a TLS certificate and private key.
 
 ### Example
-    ```bash
+```js
     const sps = require('sprdss');
     sps.generitiWaAhfedCert('certificate.pem', 'private_key.pem', './certs');
     console.log('Certificate and Private Key generation initiated.');
-
+```
 
 ## JWT Functions
 
