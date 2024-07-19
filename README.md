@@ -60,7 +60,8 @@ generateToken(secretKey, expiration, username, role): Generates a JWT token.
 validateToken(token, secretKey): Validates a JWT token.
 
 ### Example
-      ```bash
+
+```js
       const sps = require('sprdss');
       const secretKey = 'supersecretkey';
       const expiration = 3600; // 1 hour
@@ -72,6 +73,7 @@ validateToken(token, secretKey): Validates a JWT token.
       
       const validationResult = sps.validateToken(token, secretKey);
       console.log('Validation Result:', validationResult);
+```
 
 ## Data Validation
 The data validation functionalities in the spas library are provided through the SagemLData.js module.
@@ -85,7 +87,7 @@ SagemLiThab(validatorName, validationFunction): Adds a custom validation functio
 SagemEZ(data, rules): Validates data against the specified rules.
 
 ### Example
-        ```bash
+```js
         const { SagemLData } = require('sprdss');
         const sps = new SagemLData();
         
@@ -125,6 +127,8 @@ SagemEZ(data, rules): Validates data against the specified rules.
             console.error('Async validation error:', error);
           }
         })();
+```
+
 ## Contributing
 We welcome contributions to the SPRDS library. If you have any ideas, suggestions, or bug reports, please open an issue or submit a pull request.
 
