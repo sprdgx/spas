@@ -25,9 +25,9 @@ The `SPRDS` library offers a range of functionalities, including:
 
 To install the `SPRDS` library, you can use npm:
 
-    ```js
-    npm install sprdss
-    ```
+```js
+npm install sprdss
+```
 
 ## TLS Functions
 
